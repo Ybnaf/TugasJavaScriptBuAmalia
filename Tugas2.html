@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+    <title>Tugas 2</title>
+
+    <script language="Javascript">
+
+
+
+        function tambah() {
+
+            var a = parseFloat(document.kalkulator.T1.value)
+            var b = parseFloat(document.kalkulator.T2.value)
+            document.kalkulator.T3.value = a + b
+
+        }
+
+        function kurang() {
+
+            var a = document.kalkulator.T1.value
+            var b = document.kalkulator.T2.value
+
+            var hasil = a - b
+
+            document.kalkulator.T3.value = hasil
+
+        }
+
+        function kali() {
+
+            var a = document.kalkulator.T1.value
+            var b = document.kalkulator.T2.value
+
+            var hasil = a * b
+
+            document.kalkulator.T3.value = hasil
+
+
+        }
+
+        function bagi() {
+
+            var a = document.kalkulator.T1.value
+            var b = document.kalkulator.T2.value
+
+            var hasil = a / b
+
+            document.kalkulator.T3.value = hasil
+
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <form name="kalkulator">
+        <p>Bil 1 <input type="text" name="T1" size="20"><br></p>
+        <p>Bil 2 <input type="text" name="T2" size="20"><br></p>
+        <p>Hasil <input type="text" name="T3" size="20"><br></p>
+        <input type="button" value="+" name="B1" onclick=tambah(0,0)>
+        <input type="button" value="-" name="B2" onclick=kurang()>
+        <input type="button" value="X" name="B3" onclick=kali()>
+        <input type="button" value="/" name="B4" onclick=bagi()>
+
+    </form>
+
+</body>
+
+</html>
